@@ -1,0 +1,101 @@
+@media screen and (max-width: 400px){
+.main{
+	width:auto;
+	height:30px;
+	text-align: center;
+	background-color:#FFCCFF;
+	padding-left:10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-size:7px;
+}
+.nav{
+
+	margin-top:4px;
+	height:100px;
+	border:1px solid gray;
+
+}
+.list{
+	margin-left:0px;
+	list-style:none;
+	display:inline;	
+}
+li{
+	
+	width:50px;
+	padding-left:40px;
+	padding-right:40px;
+	float:left;
+}
+
+#First{
+	float:left;
+	width:90%;
+	margin-top:10px;
+	margin-left:20px;
+}
+.imgfir{
+	width:90%;
+}
+#First p{
+	width:80%;
+}
+#Second{
+	margin-top:10px;
+	margin-left:10px;
+	width:90%;
+}
+.imgsec{
+	width:90%;
+}
+#Second p{
+	width:80%;
+}
+#Third{
+	margin-top:10px;
+	margin-left: 10px;
+	width:90%;
+}
+#Third img{
+	width:100%;
+}
+#Third p{
+	width:100%;
+}
+#aside{
+	width:80%;
+	float:left;
+	height:650px;
+	margin-left:10px;
+}
+#side{
+	height:150px;
+	margin-top:20px;
+	margin-left:10px;
+	width:80%;
+}
+.Important{
+	background-color:#FFFFCC;
+	border: 1px solid gray; 	
+}
+.Content{
+	display:none;
+	background-color: #66CCFF;
+	margin-top:10px;
+	border:1px solid gray;
+}
+.Contentvital{
+	display:none;
+	background-color: #66CCFF;
+	margin-top:10px;
+	border:1px solid gray;
+}
+#footer{
+	height:40px;
+	background-color:#FF99FF;
+	padding-top:7px;
+	clear:both;
+	text-align:center;
+}
+}
