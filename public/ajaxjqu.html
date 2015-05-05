@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>without form</title>
+	</head>
+
+	<body>
+		<form action="/users" method="POST">
+		
+			
+			<p>FirstName<input type ="text" name="fname"><br></p>
+
+			
+			<p>LastName<input type ="text" name="lname"><br></p>
+ 
+			<button>Click me!</button>
+
+		</form>
+
+		<!--- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<script type="text/javascript" src="javascripts/script.js"></script>
+
+		<script>
+
+		$(document).ready(function(){
+			$("button").click(function(){
+			//	$("input");
+			
+				//console.log("hi");
+				
+				var fname = $("input[name='fname']").val();
+				var lname = $("input[name='lname']").val();
+				//console.log(fname);
+					if((fname == "") && (lname == "")){
+						alert("enter some data");
+					}
+
+			});
+		});
+					
+
+				$.ajax({
+					url:"/users",
+					type:"POST",
+					success: function(data){
+						$(".result").html(data);
+						console.log(data);
+					}
+				});
+
+
+
+		</script> -->
+
+	</body>
+</html>
