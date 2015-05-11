@@ -1,0 +1,17 @@
+.form-inline .form-group {
+	margin-top: 10px;
+    display: inline-block;
+    width:auto;
+   }
+   .form-inline .form-control{
+   	width: auto;
+   }
+  .btn{
+  	margin-right:50px;
+  }
+  .glyphicon{
+  	margin-right:50px;
+  }
+  h3{
+  	margin-top:0px; 
+  }
