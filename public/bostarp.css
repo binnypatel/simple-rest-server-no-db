@@ -3,15 +3,15 @@
     display: inline-block;
     width:auto;
    }
-   .form-inline .form-control{
+.form-inline .form-control{
    	width: auto;
    }
-  .btn{
+.btn{
   	margin-right:50px;
-  }
-  .glyphicon{
+ }
+.glyphicon{
   	margin-right:50px;
-  }
-  h3{
+ }
+h3{
   	margin-top:0px; 
   }
