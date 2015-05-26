@@ -2,23 +2,26 @@ $(document).ready(function(){
 console.log("on")
 	$(".page").on("click",".glyphicon",function(){
    		//console.log(this);
-    	$(this).parent('div').remove();
+
+    	$(this).parent('div').remove();  
        	 console.log(this.id1)
        		$.ajax({
-            	type : "delete/",
-                url : "/products" + this.id,
+            	type : "delete",
+                url : "/products/" + this.id,
                
-                success : function(data){   
-					console.log("hi")
-                    //$(this).parent('div').remove();         
-                }
+                success : function(data){ 
+                	if (data.success === true){
+                		console.log(data);
+                		$(this).parent('div').remove();  
+					} 
+				}
        		});
     });
 
-		 $.ajax({
+		$.ajax({
               url:"/products/",
               type:"get",
-              success:function(data){
+            success:function(data){
                 for(i=0;i<data.length;i++){
                 	var source = $("#template").html();
 					var temp = Handlebars.compile(source);
@@ -26,8 +29,7 @@ console.log("on")
 						console.log(data[i].id);
 					$(".page").append(html);
                 }    
-               // console.log(data);
-              }
+            }
         });
 
 	$(".add").on("click",function(event){
@@ -45,12 +47,15 @@ console.log("on")
 				des,
 				price,
 			},
+	
+
 
 			success:function(data){
 				var source = $("#template").html();
 				var temp= Handlebars.compile(source);
 				console.log(data.id);
 				$(".page").append(temp(data));
+				$(".abc").trigger('reset');
 
 			}
 		});
