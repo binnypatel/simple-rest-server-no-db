@@ -1,0 +1,49 @@
+#blanket {
+background-color:#111;
+opacity: 0.65;
+*background:none;
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+}
+
+#popUpDiv {
+position:absolute;
+background:url(images/const.gif) no-repeat;
+margin-left:430px;
+margin-top:150px;
+background-size: 400px 300px;
+width:400px;
+height:300px;
+border:1px solid #000;
+text-align:center;
+}
+
+.slide{
+	margin-top:25px;
+	font-size:30px;
+
+}
+
+@media screen and (max-width:400px){
+#popUpDiv {
+position:absolute;
+background:url(images/const1.jpg) no-repeat;
+margin-left:50px;
+margin-top:200px;
+background-size: 300px 200px;
+width:300px;
+height:200px;
+border:1px solid #000;
+text-align:center;
+}
+.slide{
+	margin-top:25px;
+	color:#FF6699;
+	font-size:20px;
+	text-shadow:1px 1px 1px #333333;
+	opacity: 0.99;
+}
+
+}

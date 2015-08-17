@@ -1,0 +1,35 @@
+@media screen and (max-width:700px){
+.container{
+	color:red;
+	float:left;
+	height:150px;
+	width:200px;
+}
+.mydiv{
+		float:left;
+}
+label{
+ 	margin-top: 20px;
+ 	float:left; 
+ 	margin-right:35px;	
+ }
+ .form-control{ 
+	margin-top:20px;   
+}
+
+.btn{
+	margin-top:20px;
+}
+#mydiv{
+	float:left;
+}
+.panel-group{
+	margin-left:300px;
+	margin-top:10px;
+}
+span{
+	
+	margin-left:200px;
+}
+
+}

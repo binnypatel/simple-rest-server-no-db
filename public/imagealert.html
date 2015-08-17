@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function loadIt&#40;&#41;
+&#123;
+ pop.style.display="none";
+&#125;
+function popIt&#40;what&#41;
+&#123;
+  pop.innerHTML="<img src="index.jpg";/><p>"+what+"</p>";
+  pop.style.display= " ";
+&#125;
+function close&#40;&#41;
+&#123;
+ pop.style.display="none";
+&#125;
+</script>
+<style>
+#pop
+&#123;
+ position&#58;absolutel
+ top&#58;100px;
+ left&#58;100px;
+&#125;
+</style>
+</head>
+<body>
+<a href="#" onClick="popIt&#40;&#39;Testing the pop function&#39;&#41;">test it</a>
+<div id="pop">
+</div>
+</body>
+</html>

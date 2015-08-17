@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery Ajax</title>
+
+	</head>
+
+	<body>
+
+		<div id="mydiv">
+			<h2>Jquery Ajax</h2>
+		</div>
+		
+		<button>click me!</button>	
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#mydiv").load("demo.txt",function(responseTxt,statusTxt, xhr){
+						if(statusTxt == "success"){
+							alert("loaded successfully");
+						}
+						else{
+							alert("error");
+						}
+					});
+				});
+			});
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angular</title>
+
+		<link rel="stylesheet" href="angular.css">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.js"></script>
+  
+
+	</head>
+
+	<body ng-app="angapp" ng-controller="angcon">
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+            <a class="navbar-brand" href="#">Store</a>
+   			</div>
+   			 <div>
+     			 <ul class="nav navbar-nav">
+       				 <li class="active"><a href="#/">Home</a></li>
+       				 <li><a href="#/About">About</a></li>
+       				 <li><a href="#/Catalog">Catalog</a></li>
+      				  <li><a href="#/Contact">Contact</a></li>
+      			</ul>
+    		</div>
+  			</div>
+		</nav>
+		
+    <div class="row">
+		  <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked style="border:1px solid gray;"">
+      			<li class="active" ><a href="#" target="_blank">Cras justo odio</a></li>
+     				<li><a href="#" target="_blank">Dapibus ac faclisis in</a></li>  
+     				<li><a href="#" target="_blank">Morbi leo risus</a></li> <li><a href="#" target="_blank">Porta ac consectetur ac</a></li>  
+     				<li><a href="#" target="_blank">Vestiburn at eros</a></li>
+            <br>
+            <button class="nav nav-pills col-md-3 btn btn-primary">Social</button>
+            <button class="nav nav-pills col-md-3 btn btn-primary">Movie</button>
+            <button class="nav nav-pills col-md-3 btn btn-primary">Search</button>
+        </ul>
+        <br>
+        <div class="forview">
+        HELLO.
+         <div ng-view>HI</div>
+        </div>
+		  </div>
+
+     
+
+		<div class="col-md-9">
+        <div class="form-group form-inline"> 
+		       <label>Search</label>
+      	   <input type="text" class="ser form-control" placeholder="Search by item name" ng-model="search">
+    	  </div>
+    	<form>
+        <div  class="form-group form-inline" id="mydiv">
+            <label>Add Item</label>
+            <input type="text" class="form-control" placeholder="item Name" ng-model="item.item">
+            <input type="text" class="form-control" placeholder="Description" ng-model="item.des">
+            <input type="number" class="form-control" placeholder="Price" ng-model="item.price">
+            <input type="number" class="form-control" placeholder="Quantity" ng-model="item.Quanty">
+            <button  class="add btn btn-info btn-md" ng-click="add(item)">Add</button>
+        </div>
+
+      <!-- <div id="tot">Total price of all items :: {{ total() }}</div>
+        <div class="page" ng-repeat="item in items" > 
+        <div class="con container well col-md-9 pull-left">
+        <button id={{id}} class="but glyphicon glyphicon-remove-sign pull-right"></button>
+        <button class="pre btn btn-primary" class= "col-md-5" style="marker-offset: 4px; margin-top: 15px;">{{items.price}}.00$</button>
+        <h3 class="item">{{items.item}}</h3>
+        <h4 class="des pull-left">{{items.des}}</h4>
+        <button class="pre btn btn-primary" class= "col-md-5" style="margin-left:500px; margin-top: 5px;">{{items.Quanty}}</button>
+        </div>
+      
+    </div> -->
+
+    <div id="tot">Total price of all items :: {{total()}}</div>
+   <div class="row" ng-repeat="x in items | filter : item">
+   
+      <div class="con container well col-md-10  col-sm-10 col-xs-10 ">
+            <div class=" col-xs-6 col-md-6">
+              <h3 class="item itde">{{item.items.item}}</h3>
+              <h4 class="des">{{item.items.des}}</h4>
+            </div>
+      
+            <div class="col-xs-6 col-md-3">
+              <button type="button" class="btn btn-primary">{{item.items.price | currency}}</button>
+              <button class="pre btn btn-primary">Item:{{item.items.Quanty}}</button>
+            </div>
+
+           <div class="col-xs-6 col-md-3">
+            <button type="button" class="btn btn-default" ng-click="removeitem(rem)"><span class="glyphicon glyphicon-remove "></span> Remove </button>
+            </div>
+      </div>
+     </div> 
+    </form>
+    </div>
+    <script type="text/javascript" src="angular.js"></script> 
+	</body>
+</html>

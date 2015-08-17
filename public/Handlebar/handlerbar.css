@@ -1,0 +1,34 @@
+body{
+  background: linear-gradient(to bottom, rgba(210,235,249,1) 17%,rgba(254,255,255,1) 84%); /* W3C */
+  background-repeat: no-repeat;
+}
+
+.nav-pills{
+  margin-left:20px;
+  border-radius:5px;
+  border:2px solid white;
+}
+
+.form-inline .form-group {
+	margin-top: 10px;
+    display: inline-block;
+    width:auto;
+}
+.form-inline .form-control{
+   	width: auto;
+}
+.con{
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C */
+}
+
+.pre{
+    margin-left:400px;
+}
+.glyphicon{
+  	margin-right:50px;
+    border-radius:100%;
+}
+h3{
+  	margin-top:-30px; 
+    color:#99CCFF;
+}

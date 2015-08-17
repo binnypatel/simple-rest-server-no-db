@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> without page ready</title>    
+		<link rel="stylesheet" href="withoutdom.css" rel=>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id="blanket" style="display:none"></div>
+		<div id="popUpDiv" style="display:none"></div>
+
+		<a href="#" onclick="popup('popUpDiv')">Click to Close CSS Pop Up</a><br><br>
+		<a href="#" onclick="popup('popUpDiv')">Click to Open CSS Pop Up</a>
+		<div id="popUpDiv" style="display:none;"></div>
+
+		<marquee class="slide" behavior="scroll" direction="right"> Page is under constuction it comes after few hours.</marquee>
+
+		<script>
+		
+			function popup(set_time) {
+				var st=document.getElementById(set_time);
+				if(st.style.display == "none"){
+					st.style.display="block";
+				}
+				else{
+					st.style.display = "none"
+				}
+			}
+
+			function toggle(name){
+				setTimeout(function(){popup(name)},2000);
+			}
+			
+			// $(window).load(function() {
+			// 	alert("site is under construction");
+			// });
+		</script>
+
+	</body>
+</html>

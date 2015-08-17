@@ -79,14 +79,12 @@ li{
 	border:1px solid gray;
 }
 .Contentvital{
-	background-color: #66CCFF;
+	background-color:#66CCFF;
 	margin-top:10px;
 	border:1px solid gray;
 }
 #footer{
-	height:40px;
 	background-color:#8FB26B;
-	padding-top:7px;
 	clear:both;
 	text-align:center;
 }

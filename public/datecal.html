@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		#main{
+			margin-top: 20px;
+			padding-left: 20px;
+			color:blue;
+		}
+
+		</style>
+	</head>
+
+	<body>
+		<input type="date" id="fdate" placeholder="first_date"><br><br>
+		<input type="date" id="sdate" placeholder="second_date"><br><br>
+
+		<button onclick="datefun(fdate.value,sdate.value)">Calculator</button>
+		<div id="main"></div>
+
+		<script>
+			function datefun(fdate,sdate){
+				var con=(1000*60*60*24);
+
+				var datone = new Date(fdate);
+				console.log(fdate);
+				var dattwo = new Date(sdate);
+       			var diffre = Math.round(Math.abs(datone.getTime() - dattwo.getTime()));
+       			var day=diffre/con;
+
+				 document.getElementById("main").innerHTML = day + 1 +" days";
+				 console.log(day);
+				
+			}
+		</script>
+	</body>
+</html>

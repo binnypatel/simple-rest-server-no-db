@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+</head>
+
+<body onload="startTime()">
+<div id="clock">
+	</div>
+
+<script>
+
+	
+
+	function startTime() {
+    	var today=new Date();
+    	var h=today.getHours();
+    	var m=today.getMinutes();
+   		var s=today.getSeconds();
+   		//m = checkTime(m);
+   		//s = checkTime(s);
+   		document.getElementById('clock').innerHTML = h+":"+m+":"+s;
+   		var t = setTimeout(function(){startTime()},1000);
+	}
+
+
+	function checkTime(tim) {
+
+   		if(tim<10){
+   	 	tim = "0" + tim;
+   		};  
+
+   			 return tim;
+	}	
+
+	
+</script>
+
+
+
+</body>
+</html>
+
+	

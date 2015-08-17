@@ -31,7 +31,13 @@ function listItems(req,res){
 	var list = [];
 	var files = getFiles(dir);
 	for (var i=0;i<files.length;i++) {
-		list.push(JSON.parse(fs.readFileSync(dir+'/'+files[i])+""));
+		var str = "";
+		try{
+			str = fs.readFileSync(dir+'/'+files[i])+"";
+			list.push(JSON.parse(str));
+		} catch(e){
+			//console.log(str);
+		}
 	};
 	res.jsonp(list);
 }

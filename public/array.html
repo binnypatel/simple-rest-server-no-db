@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ARRAY</title>
+	</head>
+
+	<body>
+		<script>
+
+		// object into array
+		
+			// var person=[{name:"Binny",grade:"A"},
+			//  {name:"Krunal",grade:"A"},
+			//  {name:"Bhushan",grade:"A"},
+			//  {name:"Jagruti",grade:"A"},
+			//  {name:"Krupa",grade:"A"}]
+
+			// 		var emptyarr=[ ];
+			// 		var emptyarr1=[ ];
+			
+			
+			// 	function Newname(exe){
+					
+			// 		for(i=0;i<exe.length;i++){
+			// 			var a = emptyarr.push(exe[i].name);
+			// 			var b = emptyarr1.push(exe[i].grade);
+			// 		}
+			// 		console.log(emptyarr);
+			// 		return emptyarr1;		
+			// 	}
+
+			// console.log(Newname(person));
+
+
+			var names=["Binny","Krunal","Bhushan","Jagruti","Krupa"];
+			var grade=["A","B","C","D","E"];
+
+			var empty=[];
+			var arr1=[];
+			var arr=[];
+
+			for(i=0;i<names.length;i++){
+			arr.push(names[i]);
+			  for(j=0;j<grade.length;j++){
+			    arr1.push(grade[i]);
+			  }
+			  empty.push({name:arr[i],grade:arr1[i]});
+			  //empty.push(x);
+			 
+			}
+			console.log(empty);		
+		</script>
+	</body>
+</html>

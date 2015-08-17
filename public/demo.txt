@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>Information data</h1>
+			<p>some text</p>
+	</body>
+</html>
